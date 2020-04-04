@@ -1,4 +1,3 @@
-# firebase-firestore-playlist
-All course files for the Firebase Firestore playlist on The Net Ninja YouTube channel. 
+# AgriCap Data Capture Application
 
-Make sure you select the correct branch to see the files :)
+Front end in HTML, CSS and JS on Firebase.
