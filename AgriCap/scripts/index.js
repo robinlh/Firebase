@@ -6,12 +6,15 @@ const accountDetails = document.querySelector('.account-details');
 const setupUI = (user) => {
     if (user) {
         //account info
-        db.collection('users').doc(user.uid).get().then(doc => {
-            const html = `
-            <div>Logged in as ${user.email}</div>
-            <div>${doc.data().company}</div>`;
-            accountDetails.innerHTML = html;
-        });
+        console.log(user.uid);
+        // db.collection('users').doc(user.uid).get().then(doc => {
+        //     const html = `
+        //     <div>Logged in as ${user.email}</div>
+        //     <div>${doc.data().company}</div>`;
+        //     accountDetails.innerHTML = html;
+        // }).catch( err => {
+        //     console.log(err.message)
+        // });
 
         // toggle user UI elements
         loggedInLinks.forEach(item => item.style.display = 'block');

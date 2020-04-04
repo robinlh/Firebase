@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4b1987-4c77-4bea-a9c7-219d240f2e91" name="Default Changelist" comment="" />
+    <list default="true" id="6a4b1987-4c77-4bea-a9c7-219d240f2e91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AgriCap/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/.idea/CannaCap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/.idea/AgriCap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/scripts/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/scripts/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AgriCap/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AgriCap/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +26,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1a4NBBgapXgLhwuhkgti39rizsX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,6 +40,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585990767819</updated>
       <workItem from="1585990769895" duration="5582000" />
+      <workItem from="1586023003360" duration="608000" />
     </task>
     <servers />
   </component>

@@ -4,16 +4,16 @@ auth.onAuthStateChanged(user => {
     if (user) {
         console.log('user logged in');
         // using real-time listener
-        db.collection('run-metrics').where('userId', '==', user.uid).onSnapshot(snapshot => {
-            let changes = snapshot.docChanges();
-            changes.forEach(change => {
-                if(change.type === 'added'){
-                    setupTable(snapshot.docs);
-                } else if (change.type === 'removed'){
-                    let td = conditionList.querySelector('[data-id=' + change.doc.id + ']');
-                    conditionList.removeChild(td);
-                }
-            });
+        db.collection('run-metrics').orderBy('timestamp').onSnapshot(snapshot => {
+            // let changes = snapshot.docChanges();
+            // changes.forEach(change => {
+            //     if(change.type === 'added'){
+            //         setupTable(snapshot.docs);
+            //     } else if (change.type === 'removed'){
+            //         let td = conditionList.querySelector('[data-id=' + change.doc.id + ']');
+            //         conditionList.removeChild(td);
+            //     }
+            // });
             setupTable(snapshot.docs);
             setupUI(user);
         }, err => {
@@ -89,11 +89,14 @@ signupForm.addEventListener('submit', (evt) => {
     const password = signupForm['signup-password'].value;
 
     // sign up the user
-    auth.createUserWithEmailAndPassword(email, password).then(cred => {
-        return db.collection('users').doc(cred.user.uid).set({
-            company: signupForm['signup-company'].value
-        });
-    }).then(() => {
+    auth.createUserWithEmailAndPassword(email, password)
+    //     .then(cred => {
+    //     console.log('Point of failure 2');
+    //     return db.collection('users').doc(cred.user.uid).set({
+    //         company: signupForm['signup-company'].value
+    //     });
+    // })
+        .then(() => {
         // close the signup modal & reset form
         const modal = document.querySelector('#modal-signup');
         M.Modal.getInstance(modal).close();
@@ -129,3 +132,14 @@ logout.addEventListener('click', (evt) => {
     auth.signOut();
 });
 
+//acount info
+const accountInfo = document.querySelector('#modal-account');
+const accountBtn = document.querySelector('#account-btn');
+
+accountBtn.addEventListener('click', evt => {
+    var user = auth.currentUser;
+    evt.preventDefault();
+    const html = `
+    <div>Logged in as ${user.email}</div>`;
+    accountInfo.innerHTML = html;
+});
