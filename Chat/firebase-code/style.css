@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+    color: #666;
+}
+
+#container{
+    max-width: 400px;
+    margin: auto;
+}
+
+#user-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 40px 0px 15px 0px;
+}
+
+#change-name{
+    text-align: right;
+    color: #0fabbc;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#messages > div{
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+
+#messages{
+    margin: 15px 0px 10px 0px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing:border-box
+}
+
+input:focus{
+    outline: none;
+}
+
+.name{
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#name{
+    font-style: italic;
+    font-weight: 600;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.red-button{
+    background-color: #da5a51;
+    box-shadow: 0 4px #961d22;
+}
+
+.red-button:hover{
+    box-shadow: 0 2px #961d22;
+}
+
+.red-button:active{
+    box-shadow: 0 0 #961d22;
+}
+
+.green-button{
+    background-color: #1fc81c;
+    box-shadow: 0 4px #148a14;
+}
+
+.green-button:hover{
+    box-shadow: 0 2px #148a14;
+}
+
+.green-button:active{
+    box-shadow: 0 0 #148a14;
+}
