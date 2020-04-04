@@ -1,0 +1,70 @@
+body{
+    background: #fefffa;
+    font-family: Roboto;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+img{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+#entry_button{
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    /*margin-left: 10px;*/
+}
+
+#yield_metrics{
+    margin-left: 10px;
+}
+
+#table_panel{
+    margin-left: 0px;
+}
+
+#main_logo{
+    margin-top: 2px;
+    margin-left: -120px;
+}
+
+#footer{
+    margin-top: 34px;
+}
+
+
+thead {
+    color: white;
+}
+
+tr:not(:first-child):hover {
+    background-color: white;
+}
+tr:not(:first-child) {
+    background-color: #c8e6c9;
+    font-family: Roboto;
+    color: #1b5e20;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: green;
+    color: #43bb38;
+}
+
+
+
+
+
+
+
